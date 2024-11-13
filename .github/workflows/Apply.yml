@@ -21,8 +21,8 @@ jobs:
     - id: auth
       uses: google-github-actions/auth@v2.0.0
       with:
-        workload_identity_provider: 'projects/624433382152/locations/global/workloadIdentityPools/github-demo-pool-niketa/providers/github'
-        service_account: 'github-actions-workload-federa@niketa.iam.gserviceaccount.com'
+        workload_identity_provider: 'projects/624433382152/locations/global/workloadIdentityPools/github-gcp-oidc-poc/providers/github'
+        service_account: 'workload-identity-federation-p@niketa.iam.gserviceaccount.com'
 
      # Terraform Init
     - name: Terraform Init
